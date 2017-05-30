@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>	
+		<meta charset="UTF-8">
+		<meta name="author" content="Aditi Gangurde">
+		<meta name="description" content="...">
+		<title>Maintenance Workers of UCD</title>
+		<link rel="stylesheet" href="css/main.css">
+		<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+	</head>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+
+<h2 class="w3-center">Meet the people who keep our campus clean.</h2>
+
+<div class="w3-content w3-display-container">
+  <img class="mySlides" src="staff1.jpg" style="width:100%">
+  <img class="mySlides" src="staff2.jpg" style="width:100%">
+  <img class="mySlides" src="staff3.jpg" style="width:100%">
+  <img class="mySlides" src="staff4.jpg" style="width:100%">
+
+  <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+  <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+</div>
+
+<script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+
+</body>
+
+<footer style="text-align: center; margin: 1em;">Images found on UC Davis <a href="http://facilities.ucdavis.edu/custodial-services/index.html">Facilities</a> Department Website.</footer>
+</html>
